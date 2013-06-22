@@ -9,37 +9,37 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonGasto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignLeft="@+id/buttonOpcao"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/buttonOpcao"
         android:layout_marginTop="44dp"
         android:text="@string/gasto" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonEmergencia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/buttonGasto"
+        android:layout_alignRight="@+id/buttonGasto"
+        android:layout_below="@+id/buttonGasto"
         android:layout_marginTop="44dp"
         android:text="@string/emergencia" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonDicas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
+        android:layout_alignLeft="@+id/buttonEmergencia"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/button3"
+        android:layout_below="@+id/buttonEmergencia"
         android:layout_marginTop="40dp"
         android:text="@string/dicas" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/buttonOpcao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
