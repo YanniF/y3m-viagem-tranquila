@@ -31,7 +31,17 @@ public class MainActivity extends Activity {
 				"Dê atenção à pressão dos pneus, se não for o suficiente, o carro vai consumir mais combustível.",
 				"Mantenha seu corpo hidratado, bebendo líquidos durante o trajeto – mas não tome bebidas alcoólicas!",
 				"É possível que as crianças estejam com o cinto de segurança devidamente colocado e ainda assim confortáveis.",
-				"Se beber, não dirija."
+				"Se beber, não dirija.",
+				"Se a sua viagem for longa, verifique água, óleo, pneus e freios antes de viajar. Faça um breve checkup no carro.",
+				"Durante uma viagem longa, a cada parada para abastecimento de combustível, sempre verifique os pneus, água e óleo.",
+				"Antes de viajar, procure saber qual o melhor itinerário para percorrer e quais as rotas alternativas.",
+				"Verifique a previsão do tempo antes de viajar.",
+				"Durante uma longa viagem, procure a cada parada, perguntar ao frentista a distância para o próximo posto.",
+				"Durante uma viagem longa, pare a cada duas horas para despertar. Não corra o risco de cochilar durante o trajeto.",
+				"Viaje a noite somente se necessário. Se você se perder, ficará mais difícil para obter informações e retornar ao trajeto.",
+				"Verifique sempre os equipamentos obrigatórios de segurança, como macaco, chave de roda, triângulo, estepe, e etc.",
+				"Caso ocorra algum problema mecânico, pare no acostamento e sinalize com o triângulo em uma distância segura.",
+				"Não dê caronas a estranhos em beira de estrada. A sua segurança e da sua família são mais importantes."
 				};
 		
 		embaralharVetor(dicas);
@@ -47,7 +57,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	static void embaralharVetor (String[] vet)
+	public static void embaralharVetor (String[] vet)
 	{//embaralha o vetor, assim não mostra sempre as dicas na mesma ordem
 	    Random r = new Random();
 	    String aux;
