@@ -8,15 +8,105 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GastoActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/buttonVoltar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="voltar"
+        android:text="@string/voltar" />
+
+    <EditText
+        android:id="@+id/editTextKmViagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewTotalLitros"
+        android:ems="10"
+        android:hint="@string/digite1"
+        android:inputType="number|numberDecimal"
+        android:maxLength="7"
+        />
+
+    <TextView
+        android:id="@+id/textViewTotalLitros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="23dp"
+        android:layout_alignRight="@+id/editTextKmViagem"
         android:text="@string/texto1"
-		/>
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewKmLitro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextKmViagem"
+        android:layout_marginTop="31dp"
+        android:text="@string/texto2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextKmLitro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewKmLitro"
+        android:ems="10"
+        android:hint="@string/digite1"
+        android:inputType="number|numberDecimal"
+        android:maxLength="7"
+        />
+
+    <TextView
+        android:id="@+id/textViewPrecoMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextKmLitro"
+        android:layout_marginTop="32dp"
+        android:text="@string/texto3"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextPrecoMedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPrecoMedio"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewPrecoMedio"
+        android:ems="10"
+        android:hint="@string/digite2"
+        android:inputType="number|numberDecimal" 
+        android:maxLength="7"
+        />
+
+    <Button
+        android:id="@+id/buttonLimpar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonVoltar"
+        android:layout_alignBottom="@+id/buttonVoltar"
+        android:layout_alignParentLeft="true"
+        android:onClick="limparCaixasDeTexto"
+        android:text="@string/limpar" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonLimpar"
+        android:layout_centerHorizontal="true"
+        android:onClick="calcularGasto"
+        android:text="@string/calcular" />
 
 </RelativeLayout>

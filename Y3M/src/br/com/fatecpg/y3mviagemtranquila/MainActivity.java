@@ -5,13 +5,14 @@ import java.util.Random;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-	Button btnDicas;
+	Button btnDicas, btnGastos;
 	String dicas[];
 	int c = 0;
 
@@ -19,7 +20,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
 		btnDicas = (Button) findViewById(R.id.buttonDicas);// associando o botão da activty com o btnDicas
 		mostrarDicas();// chama o método mostrarDicas
 	}
@@ -31,9 +32,14 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	public void chamarGastosActivity(View v) {
+		Intent intent = new Intent(this, GastoActivity.class);
+		startActivity(intent);
+	}	
+	
 	
 	public static void embaralharVetor(String[] vet) 
-	{// embaralha o vetor, assim não mostra sempre as dicas na mesma ordem
+	{// embaralha o vetor dicas, assim não mostra sempre as dicas na mesma ordem
 		Random r = new Random();
 		String aux;
 		int x;
@@ -57,7 +63,7 @@ public class MainActivity extends Activity {
 				"Procure levar na bagagem os medicamentos que você normalmente usa.",
 				"Verifique a validade dos documentos do carro.",
 				"Crianças de até sete anos e meio devem ser transportadas no banco de trás, com equipamento especial (cadeirinha).",
-				"Antes de viajar, evite os excessos, as comidas gordurosas e a ingestão de alimentos com os quais não está habituado.",
+				"Antes de viajar, evite os excessos, comidas gordurosas e a ingestão de alimentos com os quais não está habituado.",
 				"Dê atenção à pressão dos pneus, se não for o suficiente, o carro vai consumir mais combustível.",
 				"Mantenha seu corpo hidratado, bebendo líquidos durante o trajeto – mas não tome bebidas alcoólicas!",
 				"É possível que as crianças estejam com o cinto de segurança devidamente colocado e ainda assim confortáveis.",
@@ -91,7 +97,7 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
-	}
+	}// fim mostrar dicas
 
 	// método para exibir o AlertDialog com a dica de viagem
 	public void mostrarAlert(String msg) {

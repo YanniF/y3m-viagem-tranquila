@@ -10,5 +10,15 @@
     <string name="dicas">Dicas de Viagem</string>
     <string name="title_activity_gasto">Gasto por Percurso</string>
     <string name="texto1">Quantos quilômetros você pretende viajar?</string>
+    <string name="digite1">Digite os quilômetros aqui&#8230;</string>
+    <string name="voltar">Voltar</string>
+    <string name="texto2">Quantos quilômetros o seu veículo faz com 1 litro de combustível?</string>
+    <string name="texto3">Qual é o preço médio do combustível utilizado?</string>
+    <string name="digite2">Digite o preço aqui&#8230;</string>
+    <string name="limpar">Limpar</string>
+    <string name="calcular">Calcular</string>
+    <string name="title_activity_resultado_gasto">Gasto por Percurso</string>
+    <string name="totalLitros">Total de litros que serão consumidos:</string>
+    <string name="boaViagem">A Y3M te deseja uma boa viagem!</string>
 
 </resources>

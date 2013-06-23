@@ -16,6 +16,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/buttonOpcao"
         android:layout_marginTop="44dp"
+        android:onClick="chamarGastosActivity"
         android:text="@string/gasto" />
 
     <Button
