@@ -8,5 +8,7 @@
     <string name="gasto">Gasto por Percurso</string>
     <string name="emergencia">Números de Emergência</string>
     <string name="dicas">Dicas de Viagem</string>
+    <string name="title_activity_gasto">Gasto por Percurso</string>
+    <string name="texto1">Quantos quilômetros você pretende viajar?</string>
 
 </resources>
