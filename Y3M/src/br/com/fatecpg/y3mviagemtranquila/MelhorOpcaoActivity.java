@@ -1,4 +1,5 @@
 package br.com.fatecpg.y3mviagemtranquila;
+//Criado por Maria Cleib Reis
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,7 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MelhorOpcaoActivity extends Activity {
+	
 	//Declaração de variaveis locais a serem utilizadas
+	
 	EditText n1;
 	EditText n2;
 	Button cal;
