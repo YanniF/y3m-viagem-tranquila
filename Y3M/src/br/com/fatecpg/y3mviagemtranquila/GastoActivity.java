@@ -16,7 +16,7 @@ public class GastoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_gasto);
-		// para pegar o valo do edit text tem que atribuir o valor para a variavel local
+		// para pegar o valor do edit text tem que atribuir o valor para a variavel local
 		etKmViagem = (EditText) findViewById(R.id.editTextKmViagem);
 		etKmLitro = (EditText) findViewById(R.id.editTextKmLitro);
 		etPreco = (EditText) findViewById(R.id.editTextPrecoMedio);

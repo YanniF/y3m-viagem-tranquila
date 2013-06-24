@@ -23,12 +23,15 @@ public class LigacoesActivity extends Activity {
 		return true;
 	}
 	
+	// -------------CRIAÇÃO DOS MÉTODOS QUE EXECUTAM AS LIGAÇÕES-----------
+	
 	public void ligarParaPoliciaMilitar(View view){
-		Uri number = Uri.parse("tel:190");
+		Uri number = Uri.parse("tel:190"); // passando o número que vai ser ligado - chamando o dial
 		Intent callIntent = new Intent(Intent.ACTION_DIAL,number);
+		// verificando se há activies para a intent através do método queryIntentActivities do PackageManager
 		if (getPackageManager().queryIntentActivities(callIntent, 0).size()>0){
 			startActivity(callIntent);
-		}else{
+		}else{ // caso não haja exibe mensagem de falta de aplicativo
 			String mensagem = "Não há um aplicativo para esta ação!";
 			new AlertDialog.Builder(this).setTitle("Erro").setMessage(mensagem).setNeutralButton("Close",null).show();
 			
@@ -37,11 +40,12 @@ public class LigacoesActivity extends Activity {
 	
 	
 	public void ligarParaPoliciaRodoviaria(View view){
-		Uri number = Uri.parse("tel:191");
+		Uri number = Uri.parse("tel:191"); // passando o número que vai ser ligado - chamando o dial
 		Intent callIntent = new Intent(Intent.ACTION_DIAL,number);
-		if (getPackageManager().queryIntentActivities(callIntent, 0).size()>0){
+		// verificando se há activies para a intent através do método queryIntentActivities do PackageManager
+		if (getPackageManager().queryIntentActivities(callIntent, 0).size()>0){ 
 			startActivity(callIntent);
-		}else{
+		}else{ // caso não haja exibe mensagem de falta de aplicativo
 			String mensagem = "Não há um aplicativo para esta ação!";
 			new AlertDialog.Builder(this).setTitle("Erro").setMessage(mensagem).setNeutralButton("Close",null).show();
 			
@@ -50,11 +54,12 @@ public class LigacoesActivity extends Activity {
 	
 	
 	public void ligarParaAmbulancia(View view){
-		Uri number = Uri.parse("tel:192");
+		Uri number = Uri.parse("tel:192"); // passando o número que vai ser ligado - chamando o dial
 		Intent callIntent = new Intent(Intent.ACTION_DIAL,number);
+		// verificando se há activies para a intent através do método queryIntentActivities do PackageManager
 		if (getPackageManager().queryIntentActivities(callIntent, 0).size()>0){
 			startActivity(callIntent);
-		}else{
+		}else{ // caso não haja exibe mensagem de falta de aplicativo
 			String mensagem = "Não há um aplicativo para esta ação!";
 			new AlertDialog.Builder(this).setTitle("Erro").setMessage(mensagem).setNeutralButton("Close",null).show();
 			
@@ -62,17 +67,22 @@ public class LigacoesActivity extends Activity {
 	}
 	
 	public void ligarParaBombeiro(View view){
-		Uri number = Uri.parse("tel:193");
+		Uri number = Uri.parse("tel:193"); // passando o número que vai ser ligado - chamando o dial
 		Intent callIntent = new Intent(Intent.ACTION_DIAL,number);
+		// verificando se há activies para a intent através do método queryIntentActivities do PackageManager
 		if (getPackageManager().queryIntentActivities(callIntent, 0).size()>0){
 			startActivity(callIntent);
-		}else{
+		}else{ // caso não haja exibe mensagem de falta de aplicativo
 			String mensagem = "Não há um aplicativo para esta ação!";
 			new AlertDialog.Builder(this).setTitle("Erro").setMessage(mensagem).setNeutralButton("Close",null).show();
 			
 		}
 	}
 	
+	// ------------ FIM DOS MÉTODOS QUE EXECUTAM AS LIGAÇÕES  --------------
+	
+	
+	// Método que retorna para a activity main
 	public void voltar(View v){
 		finish();
 	}

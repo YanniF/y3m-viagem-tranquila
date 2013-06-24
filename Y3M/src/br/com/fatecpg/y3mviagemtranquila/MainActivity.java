@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	public void chamarLigacoesActivity(View v) {
+	public void chamarLigacoesActivity(View v) { // método para chamar a activity dos números de emergência 
 		Intent intent = new Intent(this, LigacoesActivity.class);
 		startActivity(intent);
 	}
