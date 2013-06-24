@@ -8,9 +8,4 @@ Os interessados em colaborar com o projeto devem entrar em contato com as desenv
   * Milna Mara Costa: milnaccosta@gmail.com
   * Yanni Fernanda:yanni.fernanda@gmail.com 
 
-  * Abra o Eclipse e vá ao menu _File_;
-  * Clique em  _Import_;
-  * Escolha a pasta  _SVN_ (caso não haja a pasta, você deve atualizar o Eclipse);
-  * Clique em _Next_; 
-  * Selecione a URL existente e clique novamente em _Next_;
-  * No botão 
+   
