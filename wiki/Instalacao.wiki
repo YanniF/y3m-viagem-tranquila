@@ -1,6 +1,5 @@
-#summary One-sentence summary of this page.
 
-= O que é necessário para que este aplicativo funcione em seu celular =
+== *O que é necessário para que este aplicativo funcione em seu celular? *==
 
 . Em primeiro lugar o celular deve ter sistema operacional Android com versão mínima 2.2;<br/>
 . Em seguida você deve baixar o aplicativo, copiar o arquivo.apk ,  para o seu celular;<br/>
