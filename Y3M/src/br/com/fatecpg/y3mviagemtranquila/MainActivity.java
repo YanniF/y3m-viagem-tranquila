@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	public void chamarMelhorOpcaoActivity(View v) {
+	public void chamarMelhorOpcaoActivity(View v) { //Método que chama a Activity secundária 'Melhor Opção compustível'
 		Intent intent = new Intent(this, MelhorOpcaoActivity.class);
 		startActivity(intent);
 	}
