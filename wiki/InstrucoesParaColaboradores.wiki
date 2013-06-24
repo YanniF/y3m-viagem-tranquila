@@ -1,8 +1,7 @@
 
-
 = Instruções para colaboradores =
 
-Em primeiro lugar os interessados em colaborar devem entrar em contato com os desenvolvedores. Após i
+Os interessados em colaborar com o projeto devem entrar em contato com as desenvolvedoras
 
 <br/>
 
