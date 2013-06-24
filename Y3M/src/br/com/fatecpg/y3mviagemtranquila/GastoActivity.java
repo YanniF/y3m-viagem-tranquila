@@ -68,7 +68,7 @@ public class GastoActivity extends Activity {
 
 		}
 		catch(Exception e) {
-			mostrarAlert("Erro", "Erro: " + e.getMessage());
+			mostrarAlert("Erro", "Preecha todos os campos corretamente. ");
 			limparCaixasDeTexto(v);
 		}
 	}
