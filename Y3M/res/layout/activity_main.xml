@@ -27,6 +27,7 @@
         android:layout_alignRight="@+id/buttonGasto"
         android:layout_below="@+id/buttonGasto"
         android:layout_marginTop="44dp"
+        android:onClick="chamarLigacoesActivity"
         android:text="@string/emergencia" />
 
     <Button

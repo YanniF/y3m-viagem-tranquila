@@ -20,5 +20,11 @@
     <string name="title_activity_resultado_gasto">Gasto por Percurso</string>
     <string name="totalLitros">Total de litros que serão consumidos:</string>
     <string name="boaViagem">A Y3M te deseja uma boa viagem!</string>
+    <string name="title_activity_ligacoes">Números de Emergência</string>
+    <string name="pm">190 - Polícia Militar</string>
+    <string name="pr">191 - Polícia Rodoviária</string>
+    <string name="ambulancia">192 - Ambulância</string>
+    <string name="bombeiro">193 - Bombeiro</string>
+    <string name="volta">Voltar</string>
 
 </resources>
