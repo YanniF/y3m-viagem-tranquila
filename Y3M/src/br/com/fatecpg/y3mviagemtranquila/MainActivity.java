@@ -35,7 +35,12 @@ public class MainActivity extends Activity {
 	public void chamarGastosActivity(View v) {
 		Intent intent = new Intent(this, GastoActivity.class);
 		startActivity(intent);
-	}	
+	}
+	
+	public void chamarLigacoesActivity(View v) {
+		Intent intent = new Intent(this, LigacoesActivity.class);
+		startActivity(intent);
+	}
 	
 	
 	public static void embaralharVetor(String[] vet) 
