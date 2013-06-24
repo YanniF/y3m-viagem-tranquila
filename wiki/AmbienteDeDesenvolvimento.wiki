@@ -5,10 +5,12 @@ Siga as etapas abaixo:<br />
 
   * Abra o Eclipse com o pacote ADT Bundle;
   * No menu  _Help_  selecione Install New Software;
-  * Em _Work With_ copie a seguinte URL  [http://download.eclipse.org/technology/subversive/0.7/update-site/]  e clique em adicionar
-  * 
-
-
+  * Em _Work With_ copie a seguinte URL  [http://download.eclipse.org/technology/subversive/0.7/update-site/]clique em  adicionar;
+  * Selecione _Subversive SVN Team Provider Plugin_ e next;
+  * O Eclipse vai reiniciar, aguarde;
+  * Após reiniciar, escolha _SVN KIT 1.1.7_, finish;
+  * Continue em next, finish e reinicie novamente o Eclipse;
+  * Importe o projeto.
 
 
 
