@@ -1,6 +1,9 @@
 = Ambiente de Desenvolvimento  =
 
 O ambiente de desenvolvimento deve necessariamente possuir uma IDE que ofereça suporte a projetos Android para que possa ser utilizado.
+
+A IDE utilizada para o desenvolvimento deste aplicativo foi o Eclipse.
+
 Siga as etapas abaixo:<br />
 
   * Abra o Eclipse com o pacote ADT Bundle;
