@@ -45,25 +45,29 @@ public class GastoActivity extends Activity {
 	public void calcularGasto(View v) {
 		
 		try {
-			Intent intent = new Intent(this, ResultadoGastoActivity.class);
+			Intent intent = new Intent(this, ResultadoGastoActivity.class);// criando a intent
 			
-			double kmViagem, kmLitro, preco, totalLitros, valorTotal;
+			double kmViagem, kmLitro, preco, totalLitros, valorTotal;//declaracao das variaveis
 			
 			kmViagem = Double.parseDouble(etKmViagem.getText().toString());
 			kmLitro = Double.parseDouble(etKmLitro.getText().toString());
 			preco = Double.parseDouble(etPreco.getText().toString());
 			
+			//acima  ele pega o conteudo do edit text converte, e poe na variavel
+			
+			
 			if(kmViagem == 0 || kmLitro == 0 || preco == 0) {
 				mostrarAlert("Aviso", "Digite valores diferentes de zero.");
 				limparCaixasDeTexto(v);
-			}
-			else {
+			}// neste if verifica se algum dos conteúdos é zero, se for mostra mensagem para alterar
+			
+			else {// a conta é feita aqui, o valor é mandado para outra activity
 				totalLitros = kmViagem / kmLitro;
 	            valorTotal = totalLitros * preco;
 	            
 	            intent.putExtra("LITROS", totalLitros);
 	            intent.putExtra("VALOR", valorTotal);
-	            startActivity(intent);
+	            startActivity(intent);// start na activity
 			}
 
 		}
