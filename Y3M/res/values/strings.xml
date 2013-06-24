@@ -26,5 +26,11 @@
     <string name="ambulancia">192 - Ambulância</string>
     <string name="bombeiro">193 - Bombeiro</string>
     <string name="volta">Voltar</string>
+    <string name="title_activity_melhor_opcao">Melhor Opção Combustível</string>
+    <string name="vlAlcool">Valor Álcool</string>
+    <string name="vlAlc">Valor do Álcool</string>
+    <string name="vlAl"></string>
+    <string name="vlGas">Valor da Gasolina</string>
+    <string name="vlGa"></string>
 
 </resources>
