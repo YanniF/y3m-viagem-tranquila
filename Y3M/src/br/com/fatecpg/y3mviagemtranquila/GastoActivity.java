@@ -16,7 +16,7 @@ public class GastoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_gasto);
-		
+		// para pegar o valo do edit text tem que atribuir o valor para a variavel local
 		etKmViagem = (EditText) findViewById(R.id.editTextKmViagem);
 		etKmLitro = (EditText) findViewById(R.id.editTextKmLitro);
 		etPreco = (EditText) findViewById(R.id.editTextPrecoMedio);
@@ -31,11 +31,11 @@ public class GastoActivity extends Activity {
 		return true;
 	}
 	
-	public void voltar(View v) {
+	public void voltar(View v) {//metodo para voltar a ação
 		finish();
 	}
 	
-	public void limparCaixasDeTexto(View v) {
+	public void limparCaixasDeTexto(View v) {// metodo para limpar as caixas de texto
 		etKmViagem.setText("");
 		etKmLitro.setText("");
 		etPreco.setText("");
@@ -43,7 +43,7 @@ public class GastoActivity extends Activity {
 	}
 	
 	public void calcularGasto(View v) {
-		
+		// aqui é feito o cálculo
 		try {
 			Intent intent = new Intent(this, ResultadoGastoActivity.class);// criando a intent
 			
@@ -71,13 +71,13 @@ public class GastoActivity extends Activity {
 			}
 
 		}
-		catch(Exception e) {
+		catch(Exception e) {// captura se houver erro e limpa a caixa de texto
 			mostrarAlert("Erro", "Preecha todos os campos corretamente. ");
 			limparCaixasDeTexto(v);
 		}
 	}
 	
-	public void mostrarAlert(String titulo, String msg) {
+	public void mostrarAlert(String titulo, String msg) {//mostra um alert
 		AlertDialog.Builder alert = new AlertDialog.Builder(GastoActivity.this);
 		alert.setTitle(titulo);
 		alert.setMessage(msg);
