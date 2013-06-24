@@ -48,6 +48,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="48dp"
+        android:onClick="chamarMelhorOpcaoActivity"
         android:text="@string/opcao" />
 
 </RelativeLayout>
