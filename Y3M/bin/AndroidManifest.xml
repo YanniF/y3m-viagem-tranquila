@@ -30,6 +30,14 @@
             android:name="br.com.fatecpg.y3mviagemtranquila.ResultadoGastoActivity"
             android:label="@string/title_activity_resultado_gasto" >
         </activity>
+        <activity
+            android:name="br.com.fatecpg.y3mviagemtranquila.MelhorOpcaoActivity"
+            android:label="@string/title_activity_melhor_opcao" >
+        </activity>
+        <activity
+            android:name="br.com.fatecpg.y3mviagemtranquila.LigacoesActivity"
+            android:label="@string/title_activity_ligacoes" >
+        </activity>
     </application>
 
 </manifest>
