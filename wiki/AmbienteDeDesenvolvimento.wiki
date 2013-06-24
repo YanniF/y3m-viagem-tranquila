@@ -1,13 +1,14 @@
-#summary One-sentence summary of this page.
+= Ambiente de Desenvolvimento  =
 
-= Introduction =
+O ambiente de desenvolvimento deve necessariamente possuir uma IDE que ofereça suporte a projetos Android para que possa ser utilizado.
+Siga as etapas abaixo:<br />
 
-Add your content here.
+  * Abra o Eclipse com o pacote ADT Bundle;
+  * No menu  _Help_  selecione Install New Software;
+  * Em _Work With_ copie a seguinte URL  [http://download.eclipse.org/technology/subversive/0.7/update-site/]  e clique em adicionar
+  * 
 
 
-= Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+
