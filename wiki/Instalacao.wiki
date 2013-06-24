@@ -2,10 +2,8 @@
 
 = O que é necessário para que este aplicativo funcione em seu celular =
 
-. Em primeiro lugar o celular deve ter sistema operacional Android com versão mínima 2.2;
-. Em seguida você deve baixar o aplicativo, copiar o arquivo.apk ,  para o seu celular;
-. A partir daí é só executar o aplicativo;
-. O aplicativo poderá ser obtido através deste link:
-
-
+. Em primeiro lugar o celular deve ter sistema operacional Android com versão mínima 2.2;</br>
+. Em seguida você deve baixar o aplicativo, copiar o arquivo.apk ,  para o seu celular;</br>
+. A partir daí é só executar o aplicativo;</br>
+. O aplicativo poderá ser obtido através deste link:</br>
 
