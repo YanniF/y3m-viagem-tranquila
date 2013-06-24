@@ -31,7 +31,11 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
+	public void chamarMelhorOpcaoActivity(View v) {
+		Intent intent = new Intent(this, MelhorOpcaoActivity.class);
+		startActivity(intent);
+	}
+	
 	public void chamarGastosActivity(View v) {
 		Intent intent = new Intent(this, GastoActivity.class);
 		startActivity(intent);
