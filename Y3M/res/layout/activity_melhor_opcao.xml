@@ -9,67 +9,77 @@
     android:scrollbars="horizontal|vertical"
     tools:context=".MelhorOpcaoActivity" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/vlAlc"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
     <EditText
         android:id="@+id/alcool"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/valAlcool"
-        android:layout_below="@+id/valAlcool"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
         android:ems="10"
-        android:inputType="number|numberDecimal" >
+        android:inputType="number|numberDecimal" 
+        android:maxLength="5" />
 
-        <requestFocus />
-    </EditText>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/alcool"
+        android:layout_marginTop="20dp"
+        android:text="@string/vlGas"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/gasolina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/valGas"
-        android:layout_below="@+id/valGas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
         android:ems="10"
         android:inputType="number|numberDecimal"
-        android:text="@string/vlGa" />
+        android:text="@string/vlGa" 
+        android:maxLength="5" />
 
-    <TextView
-        android:id="@+id/valGas"
+    <Button
+        android:id="@+id/cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/alcool"
-        android:layout_below="@+id/alcool"
-        android:layout_marginTop="16dp"
-        android:text="@string/vlGas" />
-
-    <TextView
-        android:id="@+id/valAlcool"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/vlAlc" />
+        android:layout_alignRight="@+id/gasolina"
+        android:layout_centerVertical="true"
+        android:onClick="chamarMelhorOpcaoActivity"
+        android:text="@string/calcular" />
 
     <Button
         android:id="@+id/voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/cal"
-        android:layout_alignRight="@+id/cal"
         android:layout_below="@+id/cal"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="55dp"
         android:onClick="voltar"
         android:text="@string/voltar" />
 
     <Button
-        android:id="@+id/cal"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/gasolina"
-        android:layout_marginTop="16dp"
-        android:onClick="chamarMelhorOpcaoActivity"
-        android:text="@string/calcular" />
+        android:layout_above="@+id/voltar"
+        android:layout_alignLeft="@+id/gasolina"
+        android:onClick="limpar"
+        android:text="@string/limpar" />
 
 </RelativeLayout>
