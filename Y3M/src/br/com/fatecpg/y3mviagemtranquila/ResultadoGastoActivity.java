@@ -24,7 +24,7 @@ public class ResultadoGastoActivity extends Activity {
 		litrosString = litrosString.replace(".", ",");
 		valorString = valorString.replace(".", ",");
 		
-		TextView tvTotalLitros = (TextView) findViewById(R.id.textViewTotalLitros);
+		TextView tvTotalLitros = (TextView) findViewById(R.id.textViewKmViagem);
 		TextView tvValor = (TextView) findViewById(R.id.textViewValor);
 		
 		tvTotalLitros.setText("Total de combustível que será consumido: \n" + litrosString + " litro(s)");

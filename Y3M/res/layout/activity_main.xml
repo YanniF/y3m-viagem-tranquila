@@ -1,55 +1,49 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:scrollbars="horizontal|vertical"
-    tools:context=".MainActivity" >
-
-    <Button
-        android:id="@+id/buttonGasto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/buttonOpcao"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/buttonOpcao"
-        android:layout_marginTop="44dp"
-        android:onClick="chamarGastosActivity"
-        android:text="@string/gasto" />
-
-    <Button
-        android:id="@+id/buttonEmergencia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/buttonGasto"
-        android:layout_alignRight="@+id/buttonGasto"
-        android:layout_below="@+id/buttonGasto"
-        android:layout_marginTop="44dp"
-        android:onClick="chamarLigacoesActivity"
-        android:text="@string/emergencia" />
-
-    <Button
-        android:id="@+id/buttonDicas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/buttonEmergencia"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/buttonEmergencia"
-        android:layout_marginTop="40dp"
-        android:text="@string/dicas" />
-
-    <Button
-        android:id="@+id/buttonOpcao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="48dp"
-        android:onClick="chamarMelhorOpcaoActivity"
-        android:text="@string/opcao" />
-
-</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+ 
+	<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	
+	    <Button
+	        android:id="@+id/buttonOpcao"
+	        android:layout_width="302dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="48dp"
+	        android:onClick="chamarMelhorOpcaoActivity"
+	        android:text="@string/opcao" />
+	    
+		 <Button
+		     android:id="@+id/buttonGasto"
+		     android:layout_width="302dp"
+		     android:layout_height="wrap_content"
+		     android:layout_gravity="center_horizontal"
+		     android:layout_marginTop="44dp"
+		     android:onClick="chamarGastosActivity"
+		     android:text="@string/gasto" />
+	
+	    <Button
+	        android:id="@+id/buttonEmergencia"
+	        android:layout_width="304dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="44dp"
+	        android:onClick="chamarLigacoesActivity"
+	        android:text="@string/emergencia" />
+	
+	    <Button
+	        android:id="@+id/buttonDicas"
+	        android:layout_width="302dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="40dp"
+	        android:text="@string/dicas" />
+    
+     </LinearLayout>
+</ScrollView>

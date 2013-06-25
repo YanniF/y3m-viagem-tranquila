@@ -72,7 +72,7 @@ public class GastoActivity extends Activity {
 
 		}
 		catch(Exception e) {// captura se houver erro e limpa a caixa de texto
-			mostrarAlert("Erro", "Preecha todos os campos corretamente. ");
+			mostrarAlert("Erro", "Preencha todos os campos corretamente. ");
 			limparCaixasDeTexto(v);
 		}
 	}
