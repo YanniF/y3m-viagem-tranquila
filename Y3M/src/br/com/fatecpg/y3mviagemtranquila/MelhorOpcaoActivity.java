@@ -41,20 +41,22 @@ public class MelhorOpcaoActivity extends Activity {
 				if(r < 0.7){
 					AlertDialog.Builder dialogo = new AlertDialog.Builder(MelhorOpcaoActivity.this);
 					dialogo.setTitle("Resposta");
-					dialogo.setMessage("Pode confiar, é mais vantajoso abastecer com álcool");
+					dialogo.setMessage("Pode confiar, é mais vantajoso abastecer com álcool.");
 					dialogo.setNeutralButton("OK", null);
 					dialogo.show();
 					
 				}else {
 					AlertDialog.Builder dialogo = new AlertDialog.Builder(MelhorOpcaoActivity.this);
 					dialogo.setTitle("Resposta");
-					dialogo.setMessage("Não é vantajoso abastecer com álcool");
+					dialogo.setMessage("Não é vantajoso abastecer com álcool.");
 					dialogo.setNeutralButton("OK", null);
 					dialogo.show();
 				}
 				}catch (Exception e) {
 					AlertDialog.Builder dialogo = new AlertDialog.Builder(MelhorOpcaoActivity.this);
-					dialogo.setMessage("Preencha todos os campos corretamentes");
+					dialogo.setTitle("Erro");
+					dialogo.setMessage("Preencha todos os campos corretamente.");
+					dialogo.setNeutralButton("OK", null);
 					dialogo.show();
 				}
 				
