@@ -31,7 +31,7 @@ public class MelhorOpcaoActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				
+				try{
 				//Atribuições
 				double num1 = Double.parseDouble(n1.getText().toString());
 				double num2 = Double.parseDouble(n2.getText().toString());
@@ -41,7 +41,7 @@ public class MelhorOpcaoActivity extends Activity {
 				if(r < 0.7){
 					AlertDialog.Builder dialogo = new AlertDialog.Builder(MelhorOpcaoActivity.this);
 					dialogo.setTitle("Resposta");
-					dialogo.setMessage("Pode confiar é mais vantajoso abastecer com álcool");
+					dialogo.setMessage("Pode confiar, é mais vantajoso abastecer com álcool");
 					dialogo.setNeutralButton("OK", null);
 					dialogo.show();
 					
@@ -50,6 +50,11 @@ public class MelhorOpcaoActivity extends Activity {
 					dialogo.setTitle("Resposta");
 					dialogo.setMessage("Não é vantajoso abastecer com álcool");
 					dialogo.setNeutralButton("OK", null);
+					dialogo.show();
+				}
+				}catch (Exception e) {
+					AlertDialog.Builder dialogo = new AlertDialog.Builder(MelhorOpcaoActivity.this);
+					dialogo.setMessage("Preencha todos os campos corretamentes");
 					dialogo.show();
 				}
 				
@@ -70,5 +75,12 @@ public class MelhorOpcaoActivity extends Activity {
 		startActivity(voltarIntent);
 		
 	}
+	
+	public void limpar(View v) {// metodo para limpar as caixas de texto
+		n1.setText("");
+		n2.setText("");
+		n1.requestFocus();
+	}
+	
 
 }
