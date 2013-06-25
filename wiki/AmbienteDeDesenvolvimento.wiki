@@ -13,5 +13,9 @@ Siga as etapas abaixo:<br />
   * O Eclipse vai reiniciar, aguarde;
   * Após reiniciar, escolha _SVN KIT 1.1.7_, Finish;
   * Continue em Next, Finish;
-  * Faça o chekout do projeto da seguinte forma: vá em _File_, _Import_, _SVN_, _Next_;
-  * Vá em _Browse_ abra a pasta _Root_ e clique na pasta do projeto, dê Ok.
+  * Após isso, clique com o botão direito em um local vazio de seu Package Explorer no Eclipse e selecione Import;
+  * Vá no item SVN e selecione Project From SVN e Create a new repository location;
+  * Preencha na lacuna url com o seguinte link:     https://y3m-viagem-tranquila.googlecode.com/svn/
+  * Selecione Browse e escolha a pasta Y3M;
+  * Clique em Finish e importe o projeto.
+  
