@@ -4,4 +4,5 @@
 . Deixe habilitada a opção de *Instalar Aplicativos de Terceiros*;<br/>
 . Em seguida você deve baixar o aplicativo e salvar o arquivo em uma pasta;<br/>
 . A partir daí é só executar o aplicativo;<br/>
-. O aplicativo poderá ser obtido através deste link:<br/>
+. O aplicativo poderá ser obtido através deste link:
+https://y3m-viagem-tranquila.googlecode.com/svn/Y3M.apk<br/>
