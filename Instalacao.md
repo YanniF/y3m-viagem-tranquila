@@ -1,0 +1,10 @@
+## **O que é necessário para que este aplicativo funcione em seu celular?** ##
+
+. Em primeiro lugar o celular deve ter sistema operacional Android com versão mínima 2.2;<br />
+. Deixe habilitada a opção de **Instalar Aplicativos de Terceiros**;<br />
+. Em seguida você deve baixar o aplicativo e salvar o arquivo em uma pasta;<br />
+. A partir daí é só executar o aplicativo;<br />
+. O aplicativo poderá ser obtido através deste link:
+https://y3m-viagem-tranquila.googlecode.com/svn/y3m.apk<br />
+. Você também pode fazer o download do aplicativo pelo Google play através do link:
+https://play.google.com/store/search?q=y3m

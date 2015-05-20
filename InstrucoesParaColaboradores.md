@@ -1,0 +1,9 @@
+# Instruções para colaboradores #
+
+Os interessados em colaborar com o projeto devem entrar em contato com as desenvolvedoras através dos e-mails abaixo:
+
+  * Maria Cleib Reis:cleibereis@gmail.com
+  * Mychella Faustino:mychella@fatecpg.com.br
+  * Milna Mara Costa: milnaccosta@gmail.com
+  * Yanni Fernanda:yanni.fernanda@gmail.com
+
